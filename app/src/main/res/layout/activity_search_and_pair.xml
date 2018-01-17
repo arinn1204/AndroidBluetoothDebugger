@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context="co.rinn.androidbluetoothdebugger.SearchAndPair">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/PairButton"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="124dp"
+        android:text="@string/PairButton"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/BTConnection"
+        android:layout_width="378dp"
+        android:layout_height="334dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
