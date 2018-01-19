@@ -37,8 +37,8 @@ public class SearchAndPair extends AppCompatActivity {
         setContentView(R.layout.activity_search_and_pair);
 
         //Creating the widgets, or getting references to the ID not sure yet
-        btnPaired = (Button) findViewById(R.id.PairButton);
-        deviceList = (ListView) findViewById(R.id.PairedBT);
+        btnPaired = findViewById(R.id.PairButton);
+        deviceList = findViewById(R.id.PairedBT);
 
 
         myBluetooth = BluetoothAdapter.getDefaultAdapter(); //get current device adapter

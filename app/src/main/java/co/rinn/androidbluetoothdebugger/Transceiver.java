@@ -29,9 +29,9 @@ public class Transceiver extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transceiver);
 
-        sendBtn = (Button)findViewById(R.id.TransmitButton);
-        rxText = (TextView)findViewById(R.id.RxText);
-        txText = (EditText)findViewById(R.id.TxText);
+        sendBtn = findViewById(R.id.TransmitButton);
+        rxText = findViewById(R.id.RxText);
+        txText = findViewById(R.id.TxText);
 
         //get the values from the intent
         Intent newInt = getIntent();
