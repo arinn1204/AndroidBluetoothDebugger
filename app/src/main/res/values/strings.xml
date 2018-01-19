@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidBluetoothDebugger</string>
     <string name="PairButton">Pair</string>
+    <string name="Send">Send</string>
 </resources>

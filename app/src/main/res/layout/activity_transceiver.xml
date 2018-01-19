@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context="co.rinn.androidbluetoothdebugger.Transceiver">
 
+    <Button
+        android:id="@+id/TransmitButton"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="296dp"
+        android:layout_marginStart="144dp"
+        android:text="@string/Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/RxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransmitButton"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <EditText
+        android:id="@+id/TxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
