@@ -79,12 +79,11 @@ public class SearchAndPair extends AppCompatActivity {
         {
             //small message that will appear if no paired devices are found
             Toast.makeText(getApplicationContext(), "No Paired Bluetooth Devices Found.", Toast.LENGTH_LONG).show();
-            //TODO: Should I only show new devices if no paired are found? Or should I put a different listView in for discovered devices?
         }
 
         //final means it can't be changed after this line
         //arrayadapter is used to "translate" the arraylist data into something the ListView can use
-        final ArrayAdapter adapter= new ArrayAdapter(this,android.R.layout.simple_list_item_1, list); //TODO: Fix this damn line and get rid of the warning
+        final ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, list);
 
         deviceList.setAdapter(adapter); //define the listview adapter for display/usage
         deviceList.setOnItemClickListener(myListClickListener); //Method called when the device from the list is clicked
