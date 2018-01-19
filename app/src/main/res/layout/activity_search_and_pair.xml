@@ -10,18 +10,18 @@
         android:id="@+id/PairButton"
         android:layout_width="160dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="112dp"
-        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="156dp"
+        android:layout_marginEnd="116dp"
         android:text="@string/PairButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ListView
-        android:id="@+id/BTConnection"
-        android:layout_width="378dp"
-        android:layout_height="334dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="48dp"
+        android:id="@+id/PairedBT"
+        android:layout_width="383dp"
+        android:layout_height="285dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 //required java imports
@@ -37,7 +38,7 @@ public class SearchAndPair extends AppCompatActivity {
 
         //Creating the widgets, or getting references to the ID not sure yet
         btnPaired = (Button) findViewById(R.id.PairButton);
-        deviceList = (ListView) findViewById(R.id.BTConnection);
+        deviceList = (ListView) findViewById(R.id.PairedBT);
 
 
         myBluetooth = BluetoothAdapter.getDefaultAdapter(); //get current device adapter
@@ -92,7 +93,19 @@ public class SearchAndPair extends AppCompatActivity {
 
     private AdapterView.OnItemClickListener myListClickListener = new AdapterView.OnItemClickListener() {
         public void onItemClick(AdapterView<?> av, View v, int arg2, long arg3) {
+            //get the last 17 characters of the mac address
+            String info = ((TextView) v).getText().toString();
+            String address = info.substring(info.length() - 17);
 
+            //make the intent to change the activity
+            Intent i = new Intent(SearchAndPair.this, Transceiver.class);
+
+            //add two variables to the intent to pass to the next activity
+            i.putExtra(EXTRA_ADDRESS, address);
+            i.putExtra("debug", DEBUG);
+
+            //start the new activity
+            startActivity(i);
         }
     };
 
