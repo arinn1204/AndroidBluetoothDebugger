@@ -54,12 +54,17 @@ public class SearchAndPair extends AppCompatActivity {
             startActivityForResult(turnBTOn, 1);
         }
 
+        //this will set the initial list
+        pairedDevicesList();
+
+        //if the device isn't already paired or if it didn't show up, the button should refresh the list
         btnPaired.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pairedDevicesList();
             }
         });
+
     }
 
     //this will create a list of the paired devices, will need a seperate function for available connections, but this will be first
