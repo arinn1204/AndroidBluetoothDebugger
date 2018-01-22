@@ -2,4 +2,6 @@
     <string name="app_name">AndroidBluetoothDebugger</string>
     <string name="PairButton">Pair</string>
     <string name="Send">Send</string>
+    <string name="TextBoxDesc">idk, yo</string>
+    <string name="RxTextDefault">shits wack yo\nthis will\nbe\nan example\nof five lines</string>
 </resources>
