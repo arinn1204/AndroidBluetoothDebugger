@@ -24,8 +24,6 @@ public class SearchAndPair extends AppCompatActivity {
     Button btnPaired;
     ListView deviceList;
 
-    private boolean DEBUG=true;
-
     //Bluetooth
     private BluetoothAdapter myBluetooth = null; //device bluetooth adapter
     private Set<BluetoothDevice> pairedDevices; //pairable devices, inside set instead of array or other container so each is uniquely represented
@@ -106,7 +104,6 @@ public class SearchAndPair extends AppCompatActivity {
 
             //add two variables to the intent to pass to the next activity
             i.putExtra(EXTRA_ADDRESS, address);
-            i.putExtra("debug", DEBUG);
 
             //start the new activity
             startActivity(i);
